@@ -1,0 +1,55 @@
+@import "tailwindcss";
+@source "./**/*.{js,jsx,ts,tsx}";
+
+@theme {
+  --font-display: 'Forum', 'Space Grotesk', -apple-system, BlinkMacSystemFont, 'Segoe UI', serif;
+  --font-sans: 'Forum', 'Montserrat', -apple-system, BlinkMacSystemFont, 'Segoe UI', serif;
+  --color-gold: #FFD700;
+  --color-gold-dark: #FFA500;
+  --color-ink: #0a0a0a;
+  --color-ink-secondary: #1a1a1a;
+}
+
+
+html {
+  scroll-behavior: smooth;
+  font-size: 18px;
+}
+
+html, body, #root {
+  width: 100%;
+  min-height: 100%;
+}
+
+body {
+  font-family: var(--font-sans);
+  line-height: 1.6;
+  color: #ffffff;
+  background: var(--color-ink);
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Hide scrollbar visually while keeping the page scrollable */
+html {
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+html::-webkit-scrollbar {
+  display: none;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}

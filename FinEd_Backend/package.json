@@ -1,0 +1,21 @@
+{
+  "name": "fined-backend",
+  "version": "1.0.0",
+  "description": "FinEd API server — AI chatbot, financial news, and dictionary endpoints",
+  "main": "server.js",
+  "type": "module",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node --watch server.js"
+  },
+  "keywords": ["finance", "education", "api", "gemini"],
+  "author": "Vionix",
+  "license": "CC-BY-NC-4.0",
+  "dependencies": {
+    "@google/generative-ai": "^0.24.1",
+    "axios": "^1.11.0",
+    "cors": "^2.8.5",
+    "dotenv": "^17.2.1",
+    "express": "^4.21.2"
+  }
+}
